@@ -5,7 +5,7 @@
 
 ## 🛠 Tech Stack
 
-- **Framework**: [React 18+](https://react.dev/)
+- **Framework**: [React 19+](https://react.dev/)
 - **Build Tool**: [Vite 8](https://vite.dev/) (with `@vitejs/plugin-react-swc`)
 - **Language**: TypeScript
 - **State Management**: Redux Toolkit (Client), TanStack Query v5 (Server)

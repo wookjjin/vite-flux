@@ -1,15 +1,14 @@
-import eslint from '@eslint/js';
-import globals from 'globals';
-import reactHooks from 'eslint-plugin-react-hooks';
-import reactRefresh from 'eslint-plugin-react-refresh';
-import tseslint from 'typescript-eslint';
-import react from 'eslint-plugin-react';
-import jsxA11y from 'eslint-plugin-jsx-a11y';
-import importPlugin from 'eslint-plugin-import';
-import queryPlugin from '@tanstack/eslint-plugin-query';
-import tailwind from 'eslint-plugin-tailwindcss';
-import eslintConfigPrettier from 'eslint-config-prettier';
-import { defineConfig } from 'eslint/config';
+import eslint from '@eslint/js'
+import globals from 'globals'
+import reactHooks from 'eslint-plugin-react-hooks'
+import reactRefresh from 'eslint-plugin-react-refresh'
+import tseslint from 'typescript-eslint'
+import react from 'eslint-plugin-react'
+import jsxA11y from 'eslint-plugin-jsx-a11y'
+import importPlugin from 'eslint-plugin-import'
+import queryPlugin from '@tanstack/eslint-plugin-query'
+import eslintConfigPrettier from 'eslint-config-prettier'
+import { defineConfig } from 'eslint/config'
 
 export default defineConfig(
   {
@@ -18,7 +17,6 @@ export default defineConfig(
 
   eslint.configs.recommended,
   tseslint.configs.recommended,
-  ...tailwind.configs['flat/recommended'],
 
   {
     files: ['**/*.{ts,tsx}'],
@@ -58,10 +56,6 @@ export default defineConfig(
       '@tanstack/query/no-rest-destructuring': 'warn',
       '@tanstack/query/stable-query-client': 'error',
 
-      // --- Tailwind CSS ---
-      'tailwindcss/no-custom-classname': 'off', // 커스텀 클래스 허용 (생산성)
-      'tailwindcss/classnames-order': 'warn',
-
       // --- Import Ordering (가독성의 핵심) ---
       'import/order': [
         'warn',
@@ -98,4 +92,4 @@ export default defineConfig(
   },
   // 마지막에 배치하여 다른 규칙들의 스타일 관련 설정을 덮어씌움 (충돌 방지)
   eslintConfigPrettier,
-);
+)
