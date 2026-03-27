@@ -1,12 +1,12 @@
-# 🚀 React + TypeScript + Vite (SWC) Project
+# 🚀 React + TypeScript + Vite Project
 
 이 프로젝트는 **Vite 8** 기반의 고성능 React 프런트엔드 템플릿입니다. 
-빠른 빌드를 위해 **SWC**를 사용하며, 확장성과 유지보수성을 고려한 시니어 레벨의 아키텍처를 지향합니다.
+빠른 빌드를 위해 Vite 8을 적용하였고, 확장성과 유지보수성을 고려한 시니어 레벨의 아키텍처를 지향합니다.
 
 ## 🛠 Tech Stack
 
 - **Framework**: [React 19+](https://react.dev/)
-- **Build Tool**: [Vite 8](https://vite.dev/) (with `@vitejs/plugin-react-swc`)
+- **Build Tool**: [Vite 8](https://vite.dev/) (with `@vitejs/plugin-react`)
 - **Language**: TypeScript
 - **State Management**: Redux Toolkit (Client), TanStack Query v5 (Server)
 - **Styling**: Tailwind CSS
@@ -102,6 +102,6 @@ src/
 ## 💡 Engineering Tips
 - Server State vs Client State: 서버 데이터는 `TanStack Query`로 관리하고, `Redux`에는 UI 상태(모달, 다크모드 등)만 담으세요.
 
-- Performance: SWC 플러그인을 사용하여 Babel 대비 최대 20배 빠른 컴파일 속도를 유지합니다.
+- Performance: Vite 8 사용하여 최대 30배 빠른 컴파일 속도를 유지합니다.
 
 - Standard: 런타임 에러 방지를 위해 TypeScript의 `strict` 모드와 ESLint의 `exhaustive-deps`를 준수합니다.
